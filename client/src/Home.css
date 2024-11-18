@@ -1,0 +1,27 @@
+.steps{
+    display: flex;
+    padding: 0% 5% 5% 5%; /*top,right,bottom,left*/
+}
+.stepbox{
+    height:250;
+    width:250;
+    background-color: rgb(255, 255, 255);
+    margin: 3% 3% 3% 3%; /*top, right, bottom, and left*/
+    padding: 5% 5% 5% 5% ;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.stepbox b{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.stepbox:hover{
+    box-shadow: inset 0 0 0 1000px rgba(245, 161, 152, 0.5);
+    transform: scale(1.2);
+}
+.faq
+{
+    background-color: rgb(226, 43, 43);
+    color:white;
+}

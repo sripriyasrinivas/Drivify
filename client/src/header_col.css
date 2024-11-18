@@ -1,0 +1,25 @@
+.head {
+    margin-top: 0%;
+	background: linear-gradient(-45deg, #ffb820, #ff7f08, #bd16ec, #c300ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 50vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+    25%{
+        background-position: 75% 25%;
+    }
+	50% {
+		background-position: 100% 50%;
+	}
+    75%{
+        background-position: 75% 25%;
+    }
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,102 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App-header {
+    background-color: #0056a2;
+    color: white;
+    padding: 20px;
+  }
+  
+  .test-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .test-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .question-section {
+    flex: 3;
+    text-align: left;
+    margin-right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navigation-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .bubble-navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 bubbles per row */
+    gap: 10px; /* Space between bubbles */
+    width: 100%;
+    max-width: 300px; /* Adjust to fit exactly two rows */
+    margin-bottom: 20px;
+  }
+  
+  .bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .bubble.answered {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .bubble:hover {
+    background-color: #0056a2;
+    color: white;
+  }
+  
+  .end-test {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .end-test:hover {
+    background-color: #cc0000;
+  }
+  
+  .question-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
